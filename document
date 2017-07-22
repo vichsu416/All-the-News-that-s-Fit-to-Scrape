@@ -1,0 +1,3 @@
+mongodb://heroku_f7149pqg:isjhos692lt5213kdpc9c0e1p4@ds145312.mlab.com:45312/heroku_f7149pqg
+
+mongoose.connect(mongodb://heroku_f7149pqg:isjhos692lt5213kdpc9c0e1p4@ds145312.mlab.com:45312/heroku_f7149pqg)` function
