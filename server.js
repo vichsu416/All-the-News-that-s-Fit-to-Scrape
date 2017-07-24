@@ -1,5 +1,4 @@
 var request = require("request");
-// Scrapes the HTML
 var cheerio = require("cheerio");
 
 console.log("___ENTER app.js___");
