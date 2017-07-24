@@ -1,11 +1,11 @@
 var request = require("request");
-
+// Scrapes the HTML
 var cheerio = require("cheerio");
 
 console.log("___ENTER app.js___");
 
 // Making a request call 
-request("https://www.nytimes.com/", function(error, response, html) {
+request("http://www.theonion.com/", function(error, response, html) {
     if (error) {
         console.log("ERROR: " + error);
 
