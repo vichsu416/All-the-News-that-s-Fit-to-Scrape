@@ -1,14 +1,11 @@
-// Pull in dependencies
-
-// Snatches HTML from URLs
 var request = require("request");
-// Scrapes the HTML
+
 var cheerio = require("cheerio");
 
 console.log("___ENTER app.js___");
 
-// Making a request call for the Onion News homepage
-request("http://www.theonion.com/", function(error, response, html) {
+// Making a request call 
+request("https://www.nytimes.com/", function(error, response, html) {
     if (error) {
         console.log("ERROR: " + error);
 
@@ -16,7 +13,7 @@ request("http://www.theonion.com/", function(error, response, html) {
         // Load the body of the HTML into cheerio
         var $ = cheerio.load(html);
 
-        // Empty array to save our scraped data
+        // Empty array to save scraped data
         var numArticles = 0;
         var scrapeResults = [];
 
@@ -41,7 +38,7 @@ request("http://www.theonion.com/", function(error, response, html) {
             scrapeResults.push(articleData);
         });
 
-        // After the program scans all of the articles, log the result
+        //log the result
         console.log(scrapeResults);
     }
 });
